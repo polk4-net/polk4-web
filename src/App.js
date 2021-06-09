@@ -1,30 +1,21 @@
 import './App.css';
-import {Grommet} from 'grommet'
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
-import Login from './components/Login/Login'
+import {Switch, Route, useHistory} from 'react-router-dom';
+import Dashboard from './components/Dashboard/Dashboard'
+import { Layout} from 'antd';
+const { Footer } = Layout;
 
-const theme = {
-    global: {
-        colors: {
-            brand: '#FD6FFF',
-            accent: '#fc6020',
-        },
-        font: {
-            family: 'Roboto',
-            size: '18px',
-            height: '20px',
-        },
-    },
-};
 
 function App() {
+    const history = useHistory();
+
     return (
-        <Grommet theme={theme}>
-          <Switch>
-            <Route path="/login" component={Login} />
-          </Switch>
-        </Grommet>
+        <div>
+            <Switch>
+                <Route path="/" component={Dashboard}/>
+            </Switch>
+            <Footer style={{ textAlign: 'center' }}>Polk4 - PolkaDOT viewer | nickshulhin.com</Footer>
+        </div>
     );
 }
 
