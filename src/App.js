@@ -14,7 +14,7 @@ function App() {
             <Switch>
                 <Route path="/" component={Dashboard}/>
             </Switch>
-            <Footer style={{ textAlign: 'center' }}>Polk4 - PolkaDOT viewer | nickshulhin.com</Footer>
+            <Footer style={{ textAlign: 'center' }}>Polk4 - PolkaDOT viewer | <a href="https://nickshulhin.com">nickshulhin.com</a></Footer>
         </div>
     );
 }
