@@ -111,8 +111,8 @@ function Dashboard() {
         }
     ]
     return (
-        <Layout>
-            <div className="card-layout-content" style={{height: '100vh'}}>
+        <Layout  style={{height: '100vh', backgroundColor: '#ececec'}}>
+            <div className="card-layout-content">
                 {
                     loading ? <Spin indicator={antIcon}/> : <div style={{paddingTop: 10}}>
                         <Tabs defaultActiveKey="1">
