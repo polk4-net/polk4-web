@@ -2,8 +2,9 @@ import './App.css';
 import React from "react";
 import {Switch, Route, useHistory} from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard'
-import { Layout} from 'antd';
-const { Footer } = Layout;
+import { Layout, Menu, Typography} from 'antd';
+const { Header, Footer } = Layout;
+const { Title } = Typography;
 
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
 
     return (
         <div>
+            <Header className="header">
+                <Title style={{ color: 'white', paddingTop: 15 }} level={4}>POLK4 NET</Title>
+                <Menu theme="dark" mode="horizontal"/>
+            </Header>
             <Switch>
                 <Route path="/" component={Dashboard}/>
             </Switch>

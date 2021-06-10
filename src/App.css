@@ -11,6 +11,11 @@
   padding: 30px;
   background: #ececec;
 }
+
+.card-layout-content-white {
+  padding: 30px;
+  background: #ffffff;
+}
 .App {
   text-align: center;
 }
