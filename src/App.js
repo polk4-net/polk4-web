@@ -16,6 +16,7 @@ function App() {
                 <Title style={{ color: 'white', paddingTop: 15 }} level={4}><Image
                     width={40}
                     height={40}
+                    preview={false}
                     src={logo}
                 />POLK4 NET</Title>
                 <Menu theme="dark" mode="horizontal"/>
