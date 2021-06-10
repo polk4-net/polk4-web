@@ -117,7 +117,7 @@ function Dashboard() {
         const extensions = await web3Enable('Polk4NET');
 
         if (extensions.length === 0) {
-            setError('It looks like you don\'t have PolkadotJS extension installed or rejected permission. Please install it and add your wallets to continue or restart the process.');
+            openNotification('PolkadotJS extension missing', 'Please install PolkadotJS extension and add your wallets to unlock all features!');
             return;
         }
 
@@ -302,17 +302,6 @@ function Dashboard() {
                                 {accounts.length <= 0 ? <div className="card-layout-content-white">
                                         <Button onClick={extension} type="primary">Connect PolkaJS extension to this
                                             platform.</Button>
-                                        <Paragraph>
-                                            <Text
-                                                strong
-                                                style={{
-                                                    fontSize: 16,
-                                                }}
-                                            >
-                                                If you already connected your PolkaJS extension, make sure it has wallets
-                                                created.
-                                            </Text>
-                                        </Paragraph>
                                     </div> :
                                     <div>
                                         <div className="card-layout-content-white">
