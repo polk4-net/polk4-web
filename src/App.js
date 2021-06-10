@@ -2,18 +2,22 @@ import './App.css';
 import React from "react";
 import {Switch, Route, useHistory} from 'react-router-dom';
 import Dashboard from './components/Dashboard/Dashboard'
-import { Layout, Menu, Typography} from 'antd';
+import { Layout, Menu, Typography, Image} from 'antd';
+import logo from './assets/logo.png';
 const { Header, Footer } = Layout;
 const { Title } = Typography;
-
 
 function App() {
     const history = useHistory();
 
     return (
         <div>
-            <Header className="header">
-                <Title style={{ color: 'white', paddingTop: 15 }} level={4}>POLK4 NET</Title>
+            <Header style={{ backgroundColor: '#0f0f0f'}} >
+                <Title style={{ color: 'white', paddingTop: 15 }} level={4}><Image
+                    width={40}
+                    height={40}
+                    src={logo}
+                />POLK4 NET</Title>
                 <Menu theme="dark" mode="horizontal"/>
             </Header>
             <Switch>
