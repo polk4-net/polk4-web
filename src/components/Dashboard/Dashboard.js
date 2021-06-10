@@ -77,6 +77,7 @@ function Dashboard() {
             setLoading(false);
         };
         setup();
+        generateWallet();
     }, []);
 
     const search = async () => {
