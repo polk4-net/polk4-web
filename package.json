@@ -1,6 +1,8 @@
 {
   "name": "polk4-web",
+  "author": "Nick Shulhin | https://nickshulhin.com/",
   "version": "0.1.0",
+  "license" : "SEE LICENSE IN LICENSE file",
   "private": true,
   "dependencies": {
     "@babel/core": "7.12.3",
@@ -72,7 +74,9 @@
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.1",
     "webpack-manifest-plugin": "2.2.0",
-    "workbox-webpack-plugin": "5.1.4"
+    "workbox-webpack-plugin": "5.1.4",
+    "@polkadot/util-crypto": "latest",
+    "@polkadot/keyring": "latest"
   },
   "scripts": {
     "start": "node scripts/start.js",
