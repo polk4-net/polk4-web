@@ -37,3 +37,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## License
 polk4-web is [GPL 3.0 licensed](LICENSE)
+
+## Thanks!
+* [Surya Setiyaputra](https://github.com/suryast) for logo design 🎨
