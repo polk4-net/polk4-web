@@ -206,27 +206,7 @@ function Dashboard() {
         }
     ];
 
-    const getInvolvedPane = <TabPane tab="Get involved" key="1">
-        <div className="card-layout-content-white">
-
-            <Comment
-                author={<a>Nick</a>}
-                avatar={
-                    <Avatar
-                        src="https://www.nickshulhin.com/images/icon-192.png"
-                        alt="Nick"
-                    />
-                }
-                content={
-                    <p>
-                        Thank you for visiting POLK4.net! Just like you I was very excited about the launch of PolkaDOT with all amazing features such as parachains, governance as well solving major transaction fee issues. This project was started as a personal web application with a set of helper tools to make PolkaDOT experience better and faster. I decided to convert it into a product with Opensource core to allow community to participate and implement features which POLK4.net is missing. If you wish to participate in development or simply would like to see how does it work - check out <a href="https://github.com/polk4-net/polk4-web">POLK4.net core which is available on a GitHub</a>. Happy Polking!
-                    </p>
-                }
-            />
-        </div>
-    </TabPane>;
-
-    const networkPane = <TabPane tab="Network" key="2">
+    const networkPane = <TabPane tab="Network" key="1">
         <Row gutter={16} style={{paddingTop: 10}}>
             <Col span={24}>
                 <Card>
@@ -243,7 +223,7 @@ function Dashboard() {
         </Collapse>
     </TabPane>;
 
-    const walletExplorerPane = <TabPane tab="Wallet Explorer" key="3">
+    const walletExplorerPane = <TabPane tab="Wallet Explorer" key="2">
         <Search placeholder="15huYREoovwL5XCmJ9QHr1xXk5rax2G7rNs7z4gPWWDhtiGD"
                 enterButton="Search"
                 size="large"
@@ -272,7 +252,7 @@ function Dashboard() {
         </div>}
     </TabPane>;
 
-    const generateWalletPane = <TabPane tab="Generate Wallet" key="4">
+    const generateWalletPane = <TabPane tab="Generate Wallet" key="3">
         <div className="card-layout-content-white">
             <Button onClick={generateWallet} type="primary">Generate new wallet</Button>
             {
@@ -436,7 +416,6 @@ function Dashboard() {
                 {
                     loading ? <Spin indicator={antIcon}/> : <div style={{paddingTop: 10}}>
                         <Tabs defaultActiveKey="1" onChange={() => setError(null)}>
-                            {getInvolvedPane}
                             {networkPane}
                             {walletExplorerPane}
                             {generateWalletPane}
