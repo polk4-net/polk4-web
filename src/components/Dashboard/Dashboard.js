@@ -195,17 +195,6 @@ function Dashboard() {
         setGeneratedAddress(pair.address);
     };
 
-    const columns = [
-        {
-            title: 'Address',
-            dataIndex: 'address',
-            key: 'address',
-            render: text => <Popover content={<p>{text}</p>} title="Address" trigger="click">
-                <span>{text ? text.substring(0, 10) : ''}... (click to reveal full address)</span>
-            </Popover>
-        }
-    ];
-
     const networkPane = <TabPane tab="Network" key="1">
         <Row gutter={16} style={{paddingTop: 10}}>
             <Col span={24}>
@@ -216,11 +205,9 @@ function Dashboard() {
                 </Card>
             </Col>
         </Row>
-        <Collapse style={{paddingTop: 5}}>
-            <Panel header="Validators" key="1">
-                <Table dataSource={validators} columns={columns}/>
-            </Panel>
-        </Collapse>
+        <Badge.Ribbon text="Canvas test network [expect chaos]">
+            <Card style={{ backgroundColor: 'black', color: 'white', fontStyle: 'bold'}}>wss://canvas.polk4.net</Card>
+        </Badge.Ribbon>
     </TabPane>;
 
     const walletExplorerPane = <TabPane tab="Wallet Explorer" key="2">
