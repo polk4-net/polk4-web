@@ -1,25 +1,18 @@
 {
-  "short_name": "Polk4 NET",
-  "name": "PolkaDOT network viewer",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+  "name": "DotView",
+  "description": "Polkadot viewer app | Polk4.net",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+  "permissions": [
+    "storage"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#001529",
-  "background_color": "#ececec"
+  "content_security_policy": "script-src 'self' blob: 'unsafe-eval' 'wasm-eval'; object-src 'self'"
 }

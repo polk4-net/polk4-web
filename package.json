@@ -1,6 +1,6 @@
 {
-  "name": "polk4-web",
-  "author": "Nick Shulhin | https://nickshulhin.com/",
+  "name": "dot-view-by-polk4.net",
+  "author": "Nick Shulhin | https://nickshulhin.com/ | https://polk4.net",
   "version": "0.1.0",
   "license" : "SEE LICENSE IN LICENSE file",
   "private": true,
@@ -80,7 +80,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "INLINE_RUNTIME_CHUNK=false node scripts/build.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
